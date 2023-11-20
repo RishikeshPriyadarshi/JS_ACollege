@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FRUIT</title>
+</head>
+<body>
+    <script>
+        //takiing input from user ,after declaring the variable
+        var fruittype = prompt("Kon sa fruit chahiye ? ");
+
+        switch(fruittype){
+
+            case 'Narangi':
+                console.log("Narangi hai 60rs Kilo");
+                break;
+
+            case 'Seb':
+                console.log("Seb hai 80rs kilo");
+                break;
+                
+            case 'kele':
+                console,log("Kele hai 35rs kilo");
+                break;
+                
+            case 'Amrudh':
+                console.log("Amrudh hai 70rs kilo");
+                break;
+                
+            case 'Aam':
+                console.log("Aam hai 120rs kilo");
+                
+            case 'Papita':
+                console.log("Papita hai 90rs kilo");
+                break;
+            
+                
+             //defaut hm tb use krte hai jb hume wo na mile list me jo humne pucha hia
+             // it wiull return user defined message
+
+            default:
+                console.log(`${fruittype} aaj khtam ho gaya kl ayega`);  
+
+        }
+        console.log("Orr kuch Chaiye u can ordrer");
+    </script>
+</body>
+</html>

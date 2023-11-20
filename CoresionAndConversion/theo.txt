@@ -1,0 +1,47 @@
+There r basically 2 types of conversion
+----------------------------------------
+1. EXPLICIT
+2. IMPLICT
+
+
+EXPLICIT : Hume explicitly define krna padta hai for ex string
+---------
+ex:  string(123)  //Ouput--> '123'
+
+     string(-123) //'-123'
+
+
+IMPLICT -->Operators r implicit i.e hume define krne ki jarurat nahi hai
+--------
+ex:  true + false    //1
+     
+     12/6           //2
+
+     [1]>NULL      //True
+
+
+------------------------------------------------------------
+Hm 3 type ke data types me conversion kr skte hai
+
+1. STRING CONVERSION 
+--------------------
+>string(123)   //Explicitt
+> 123+''       //IMPLICT
+
+
+2.BOOLEAN CONVERSION 
+--------------------
+>Boolean(2)    //Explicit
+>if(2) {---}   //Implicit due to logical context
+>!!2           //Implicit due to logical operator
+>2||'hello'    //Implicit due to logical operator
+
+
+
+
+3.NUMBER CONVERSION
+-------------------
+>Number('123')  //EXPLICIT
+>+'123'          //Implicit
+>5/NULL         //IMPLICT
+ 

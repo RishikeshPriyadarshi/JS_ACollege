@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtering Greeting Messages</title>
+</head>
+<body>
+
+    <h2>Filtering Greeting Messages</h2>
+
+    <div class="output">
+
+        <ul></ul>
+
+    </div>
+
+    <script>
+
+        const list = document.querySelector('.output ul');
+        list.innerHTML='';
+        
+        //array
+        let grettings=['Happy Birthday',
+            'Happy Holi',
+            'Holi Mubarak',
+            'Get Well soon',
+            'Happy Aniversaryy'];
+
+            for(let i=0;i<greetings.length;i++){
+
+                if(greetings[i].indexOf("Holi") !==-1){
+                    
+                    //we will make li ele inside createElement method
+                    let listItem = document.createElement('li');
+
+                    listItem.textContent=greetings[i];
+
+                    list.appendChild(listItem);
+                }
+            }
+
+
+    </script>
+    
+</body>
+</html>
