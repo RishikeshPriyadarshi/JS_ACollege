@@ -1,0 +1,235 @@
+           SCOPE
+           -------
+
+>Why there is SCOPE ?????????
+
+ -- In programmming  there is principle called
+    "PRINCIPLE OF LEAST ACCESS"
+             |
+             |
+       it means humko jitna kam Access mile or usme hm kitna
+       jayada output nikal sake, ye principle hm programmming
+       ke andar bahut follow krte hai
+
+       means 'hum jitne km resource le sake or maximum O/P nikal sake
+
+
+
+  issilye "SCOPE se hame seperation of code milta hai , ki 
+           hm hamare code ko seperate kr sake"
+
+         "or saath me hum uss particular code ko usi jagah pe use kre or
+          un variable ko wahi tk simit rakhe taki memory allocation km ho 
+          resources bhi hm km use kre and ouput utna hi aye acche se"
+
+iisilye hm SCOPE ko use krte hai
+
+------------------------------------------------------------------
+There r 2-types of SCOPES in JS:
+----------------------------------
+1.GLOBAL-SCOPE 
+2.LOCAL-SCOPE --- also called FUNCTIONAL SCOPE
+
+
+
+  Each programming language has its own standardize way of writing
+   code.And JavaScript follows both ES5 and ES6. Whether 
+   it is ECMAScript 5(ES5) or ECMAScript 6(ES6),
+   it is a standard for scripting languages like JavaScript,
+   JScript etc. When writing a JavaScript code using these standards,
+    there are slight differences between ES5 and ES6.
+
+    EXAMPLEs:
+
+    Variables
+    ----------
+
+In ES5, there is a one way of defining variables using 
+var keyword. But ES6 has introduced two more ways of 
+defining variables using keywords let and const. 
+However, let and const use block scope while var uses function scope.
+ Also, the variables that are defined using const are immutable.
+
+
+           //ES5
+var age = 20;
+ 
+      //ES6
+let days = 5;
+const pi = 3; //immutable    
+
+
+Define Objects
+-----------------
+
+ES6 provides easy way to define objects when 
+the keys and the variable names are same.
+
+var fullName = 'John Moore';
+var age = 25;
+var gender = 'Male';
+var city = 'London'
+
+// ES5
+var student = { fullName: fullName, age: age, gender: gender, city: city };
+
+// ES6
+var student = { fullName, age, gender, city };
+
+
+
+
+Merge Objects
+----------------
+
+In ES5, Object.assign() method is used to merge objects.
+ But ES6 has introduced spread operator(…) to merge objects.
+  But there is a slight difference. 
+  The Object.assign() changes the target variable,
+   while the spread operator does not.
+
+var target = { firstName: 'John', age: 25 }
+var source = { fullName: 'John Moore', gender: 'Male', city: 'London' }
+
+//ES5
+var updatedTarget = Object.assign(target, source); //changes the target variable
+
+//ES6
+var updatedTarget = { ...target, ...source};
+
+
+
+
+Object Destructuring
+----------------------
+
+In ES5, Objects are extracted one by one manually. But ES6 has made it to one line of code.
+
+var student = { fullName: 'John Moore', age: 25, gender: 'Male', city: 'London' };
+
+//ES5
+var fullName = student.fullName;
+var age = student.age;
+var gender = student.gender;
+var city = student.city;
+
+//ES6
+var { fullName, age, gender, city } = student;
+
+
+
+String Interpolation
+----------------------
+
+In ES5, Concatenation operator is used to join strings. 
+But ES6 has introduced Template Literal(`) which allows
+ to perform the string interpolation in convenient way.
+
+var fullName = 'John Moore';
+var age = 25;
+var gender = 'Male';
+var city = 'London'
+
+//ES5
+var intro = 'Hello, I am ' + fullName + '. I am ' + age + ' years old ' + gender + ' student from ' + city + '.';
+
+//ES6
+var intro = `Hello, I am ${fullName}. I am ${age} years old ${gender} student from ${city}.`;
+
+
+
+Import Module
+-----------------
+
+ES5 uses require keyword while ES6 uses import keyword. 
+ES6 allows to import child modules as well.
+
+//ES5
+var App = require('./App');
+
+//ES6
+import App from './App';
+import { Header, Sticky } from '@primer/components'; //child modules
+
+
+
+
+Export Module
+-------------
+
+ES6 allows to export child modules and variables as well.
+
+var Student = { fullName: 'John Moore', age: 25, gender: 'Male', city: 'London' };
+
+//ES5
+module.exports = Student;
+
+//ES6
+export default Student;
+export const fullName = 'John Moore'; //child variables
+export const age = 25;
+
+
+
+
+Arrow Function
+ES6 has introduced the arrow function. 
+It does not require the keyword function.
+
+//ES5
+function sayHello(name) {
+ console.log('Hello, ' + name);
+}
+
+//ES6
+const sayHello = (name) => {
+ console.log(`Hello, ${name}`);
+}
+const sayHello = name => console.log(`Hello, ${name}`);
+ //You can ignore parenthesis, if the function contains 
+    a single parameter and only one statement
+
+
+
+
+
+Promise and Callback
+--------------------
+
+ES6 has introduced Promise() which is a convenient way
+ of handling callbacks.
+
+//ES5
+var access = true;
+function callback(message) {
+ console.log('Success! ' + message);
+}
+function errorCallback(message) {
+ console.log('Failed! ' + message);
+}
+function authenticate(callback, errorCallback) {
+ if (access) {
+  callback('You have access.');
+ } else {
+  errorCallback('You don't have access.');
+ }
+}
+
+
+//ES6
+var access = true;
+function authenticate() {
+ return new Promise((resolve, reject) => {
+  if (access) {
+   resolve('You have access.');
+  } else {
+   reject('You don't have access.');
+  }
+ });
+}
+authenticate().then((message) => console.log(`Success! ${message}`)).catch((message) => console.log(`Failed! ${message}`));    
+
+
+___________________________________________________________________________________________________________________________________________________________
+
+

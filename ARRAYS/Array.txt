@@ -1,0 +1,30 @@
+               ARRAY
+        
+>Array is an linear data structure jis me hum data store 
+  kra sakte hai list ke tarah..
+
+>isilye "Array ko Object-type-list bhi kehte hai hum JS mein"
+ kyoki "Array bhi internally ek Object hi hai"..
+
+-------------------------------------------
+ "As we know Everything in JS is object"
+ ------------------------------------------
+
+ >Array bhi ek object hi hai pr ye thoda alg tarike se kaam
+  krta hai
+
+> toh kaise kaam krta hai?
+  --Jb bhi hm ek object banate hai toh uske andr 
+     (ek key hoti hai, ek value hoti hai ) aur unka ek poora pair hume milta hai
+     (key,value)
+
+  -> But in  array yaha pe bhi pair hi hone wale hai, pr jo 
+    "key hai usse hm kahenge index"
+    (index,value).
+
+> or humesa yaad rakhe ki key(i.e index hai) uski numbering humesa
+  0 se start hogi array me (Atleast in JS)
+
+  
+ 
+    

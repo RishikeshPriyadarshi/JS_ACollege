@@ -1,0 +1,13 @@
+IN JS there r some data structures is been used like
+ "stack", "heap", "queue"
+
+ 
+ Here we will talk about Stack only
+
+ Stack
+ -----
+    it is an linear DS like array
+ >it follows the concept of "LIFO"
+ > Ager hame koi cheez hatani hai to upar(i.e jo last me aayi hai)
+  se hatani hogi 
+

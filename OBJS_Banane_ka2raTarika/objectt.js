@@ -71,7 +71,7 @@ function createCourse(){
         section: 3,
         title: 'javascript',
     
-        //"Objects ke andar hm alg alg objects ko bhi sore kra skte hai
+        //"Objects ke andar hm alg alg objects ko bhi store kra skte hai
         //Hm ke object banyenge (i.e.notes:) or uske andr nesting(i.e.{}) krenge
         notes:{
             //kisi bhi chhez ke andar hm dusri chhez kre hai use nesting kehte hai
@@ -109,7 +109,7 @@ course.enroll();
 
 //Factory Function
 function createCourse(title){ //Here we hv used camelCase
-
+thedarshi91@gmail.com
     return{
         title: title,
 
@@ -134,7 +134,7 @@ console.log(course)
               //CONSTRUCTOR-FUNCTION
 
 
- /*
+ 
 //Factory Function
 function createCourse(title){
 
@@ -146,9 +146,11 @@ function createCourse(title){
         }
 
     }
-}     
+}   
 
-*/
+
+
+
 
 
 //Constructor Function
@@ -164,8 +166,18 @@ function Course(title){ //we hv used here Pascalcase
     }
 }  
 
+
+
 //let see here how we use Constructor funcn
 const  course = new Course('Javascript')
+
+//delete keyword is used to delete 
+delete course.title;
+
+//we can make new function here also
+course.checkEnrollment = function(){
+    console.log('30 users r enrolled ');
+}
 course.enroll();
 
 /*
@@ -179,3 +191,7 @@ course.enroll();
           ban jayega
               
 */
+
+
+
+
