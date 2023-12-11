@@ -1,0 +1,68 @@
+/*
+  JS ke andr hamra Global-execution-context bantata hai jb bhi hamara code run 
+  krta hai or isme 2 phases hote hai:
+               1.Memory Creation
+               2.Thread Of Execution 
+
+
+*/           
+
+              HOISTING
+              -------
+ JS Hoisting rfers to process wherby the interprter alloctes 
+ the memory to the varible and function declartions
+ prior to the execution of code  
+  
+  "Declarations that r made using var r intalized as default
+    value of undefined"
+
+ "Declarations that r made using let and const r not intalized
+  as part of Hoisting"              
+
+
+           
+            HOISTING
+            --------
+>Jb bhi hm variables ko declare krte hai, to varaibles pehle
+ hi unke memeory ko allocate ho jaate hai, 
+ "hamara jo program wo run hone se pehle"
+ 2nd phase jo hai thread of  execution haijisme code execute hoga
+  lekin usse pehle hi hamne 
+ memory ko store karwa liya, issi cheez ko hm Hoisting kehte hai
+
+const bax
+
+
+//Diffrenece between "let" "const" and "var"
+  
+  >1st main diffrence is that "let nd const keyword was introduced
+                                with ES-6" i.e. 2017 k baad ayi
+
+>"Before ES-6 there was only one keyword that was var"
+
+>but the "main thing with let and const is taht they r Hoisted
+ bt whwn we go to access the value it gives the error"
+
+
+
+
+_________________________________________________________________________
+Diffrenece Between :
+
+1.Not-Defined(Blank)-- when there is nothing in hand
+
+2.Un-Defined ---> when there is tray in hand, but nothhing in tray
+                  Mtlb tray khali hai
+
+3.Aur jb haath ke tray me cup aa gyi means , usme ek value aa gyi
+  means hamara variable undefined nahi rahega
+
+
+  _________________________________________________________________________
+  
+ ye jo var keyword hai wo block-Scope me chalta hi nahi hai
+means wo scope ko dekhega ki nahi aur aise hi aage hi badhte jayega
+
+NOTE:"var keyword does not work on block scope ,it 
+      will not consider block-scope and will go normally
+      from and out of the block-scope "

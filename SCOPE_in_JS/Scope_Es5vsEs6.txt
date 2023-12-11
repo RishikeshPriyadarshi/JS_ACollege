@@ -29,15 +29,16 @@ There r 2-types of SCOPES in JS:
 ----------------------------------
 1.GLOBAL-SCOPE 
 2.LOCAL-SCOPE --- also called FUNCTIONAL SCOPE
+3.BLOCK-SCOPE
 
 
 
-  Each programming language has its own standardize way of writing
-   code.And JavaScript follows both ES5 and ES6. Whether 
-   it is ECMAScript 5(ES5) or ECMAScript 6(ES6),
-   it is a standard for scripting languages like JavaScript,
-   JScript etc. When writing a JavaScript code using these standards,
-    there are slight differences between ES5 and ES6.
+Each programming language has its own standardize way of writing
+code.And JavaScript follows both ES5 and ES6. Whether 
+it is ECMAScript 5(ES5) or ECMAScript 6(ES6),
+it is a standard for scripting languages like JavaScript,
+JScript etc. When writing a JavaScript code using these standards,
+there are slight differences between ES5 and ES6.
 
     EXAMPLEs:
 
@@ -56,10 +57,7 @@ var age = 20;
  
       //ES6
 let days = 5;
-const pi = 3; //immutable    
-
-
-Define Objects
+const pi = 3; //immutaNote
 -----------------
 
 ES6 provides easy way to define objects when 
@@ -80,7 +78,7 @@ var student = { fullName, age, gender, city };
 
 
 Merge Objects
-----------------
+----------------Note 
 
 In ES5, Object.assign() method is used to merge objects.
  But ES6 has introduced spread operator(…) to merge objects.
@@ -232,4 +230,14 @@ authenticate().then((message) => console.log(`Success! ${message}`)).catch((mess
 
 ___________________________________________________________________________________________________________________________________________________________
 
+
+                  ENVIROMENT in JS
+                  ----------------
+                  1.Node-Js Enviroment
+                  2.Browser Enviroment
+
+
+>Node-Enviroment--- me Global-Object ka use krte hai
+
+>Browser-Enviroment---- me hm Window-Object ka use krtre hai
 
